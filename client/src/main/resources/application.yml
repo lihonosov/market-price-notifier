@@ -1,0 +1,14 @@
+server:
+  port: 8889
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: client
+
+market:
+  server:
+    rest-endpoint: "http://127.0.0.1:8888/alert"
+    ws-subscription-uri: "/alerts"
+    ws-url: "ws://127.0.0.1:8888${market.server.ws-subscription-uri}"

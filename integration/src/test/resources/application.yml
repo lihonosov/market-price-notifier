@@ -1,0 +1,14 @@
+server:
+  port: 7777
+
+spring:
+  profiles:
+    active: test
+
+ws.endpoint: "/alerts"
+
+market:
+  server:
+    rest-endpoint: "http://127.0.0.1:${server.port}/alert"
+    ws-subscription-uri: ${ws.endpoint}
+    ws-url: "ws://127.0.0.1:${server.port}${ws.endpoint}"
