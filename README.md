@@ -4,7 +4,7 @@ Spring Boot application to notify when currency's price has changed above some l
 ### Components/Modules
  * Server - server REST and WebSocket endpoints
     * SwaggerUI: http://localhost:8888/swagger-ui.html
- * Client - client console ans WEB component
+ * Client - client console and WEB component
     * WEB: http://localhost:8889
     ![](webUI.png)
     
